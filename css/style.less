@@ -1,0 +1,42 @@
+/* ============= */
+/* = BOOTSTRAP = */
+/* ============= */
+
+/* -- VARS -- */
+@site_width: 996px; /* -- is used in .util.centered() -- */
+@site_assets_path: "../"; /* -- is used in .util.bg() -- */
+@site_def_font_size: 16px; /* -- is putted in the body -- */
+@site_dyn_font_size: 16px; /* -- is used in .typo.pxToEM() -- */
+@site_a_normal_color: #00e;
+@site_a_hover_color: #06e;
+@site_a_visited_color: #551a8b;
+@site_select_text_color: #fff;
+@site_select_bg_color: #fe57a1;
+
+/* -- IMPORTS -- */
+@import 'lib/boilerplate.less';
+@import 'lib/more.or.less';
+@import 'lib/mq.less';
+
+/* -- IMPORT DEFAULT STYLESHEET-- */
+.site {
+	.import() {
+		@import 'site.less';
+	}
+}
+
+
+/* -- IMPORT ERRORS STYLESHEET-- */
+.errors {
+	.import() {
+		@import 'lib/error.less';
+	}
+}
+
+/* -- INITIALIZATION -- */
+.boiler.init();
+.boiler.normalize();
+.boiler.ns-helpers();
+.site.import();
+.errors.import();
+.mq.queries();

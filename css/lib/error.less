@@ -1,0 +1,31 @@
+.errorBox {
+	margin: 10px 0;
+	border: red 1px solid;
+	color: #900;
+}
+
+.input-validation-error {
+	color: #900;
+	border: red 1px solid;
+}
+
+.field-validation-error, .field-validation-valid {
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	border: red 1px solid;
+}
+
+.field-validation-valid {
+	border: green 1px solid;
+}
+
+.validation-summary-errors {
+	.errorBox;
+	ul {
+		display: block;
+	}
+}
+.validation-summary-valid {
+	display: none;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  	<title>MoreOrLess - Tests</title>
+  	<link rel="stylesheet" href="tests.css" />
+  </head>
+  <body>
+  	<div id="content">
+      <h1>more.or.less tests</h1>
+
+      <div class="nav">
+        <a href="#effect"><div class="name">.effect</div></a>
+        <a href="#lib"><div class="name">.lib</div></a>
+      </div>
+
+      <section id="individual">
+        <h2>Individual tests</h2>
+
+        <div class="namespace">
+          <div class="test default">
+            <h3>default - reference block</h3>
+            <div class="should"><strong>should:</strong> render a basic blue box</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="namespace" id="effect">
+          <div class="name">.effect</div>
+
+          <div class="test opacity-default">
+            <h3>.effect.opacity()</h3>
+            <div class="should"><strong>should:</strong> render a 50% transparent black box (default opacity)</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test opacity-90pct">
+            <h3>.effect.opacity(.1)</h3>
+            <div class="should"><strong>should:</strong> render a 90% transparent black box</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test drop-shadow-default">
+            <h3>.effect.drop-shadow()</h3>
+            <div class="should"><strong>should:</strong> render a box with a 5px black drop shadow, 5px right and 5px top offset</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test drop-shadow-special">
+            <h3>.effect.drop-shadow(10px, -10px, 10px, 0px, #ff0000)</h3>
+            <div class="should"><strong>should:</strong> render a box with a 10px red drop shadow, 10px right and -10px top offset</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test inner-shadow-default">
+            <h3>.effect.inner-shadow(5px, 5px, 10px, 10px, #ff0000)</h3>
+            <div class="should"><strong>should:</strong> render a box with a 10px red inner shadow, blurred, 5px right and 5px top offset</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test inner-shadow-special">
+            <h3>.effect.inner-shadow()</h3>
+            <div class="should"><strong>should:</strong> render a box with a 1px black inner shadow, 0px right and 0px top offset</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test text-shadow-default">
+            <h3>.effect.inner-shadow()</h3>
+            <div class="should"><strong>should:</strong> render a box with text shadow on the white content</div>
+            <div class="result">
+              <div>Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+
+          <div class="test rounded-corners-default">
+            <h3>.effect.rounded-corners()</h3>
+            <div class="should"><strong>should:</strong> render a box with 4 rounded corners of 5px radius (default radius)</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test rounded-corners-10px">
+            <h3>.effect.rounded-corners(10px)</h3>
+            <div class="should"><strong>should:</strong> render a box with 4 rounded corners of 10px radius</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test background-gradient">
+            <h3>.effect.background-gradient()</h3>
+            <div class="should"><strong>should:</strong> render a box with top down white to black gradient</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+
+          <div class="test background-gradient-colors">
+            <h3>.effect.background-gradient(green, blue, green)</h3>
+            <div class="should"><strong>should:</strong> render a box with top down green to blue gradient, and a solid green color on IE</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="namespace" id="lib">
+          <div class="name">.lib</div>
+
+          <div class="test layered-paper">
+            <h3>.lib.layered_paper()</h3>
+            <div class="should"><strong>should:</strong> render three layers of divs</div>
+            <div class="result">
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+  	</div>
+  </body>
+</html>
