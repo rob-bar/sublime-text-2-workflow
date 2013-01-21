@@ -72,10 +72,12 @@ Sublime xiki!!!
 
 ##Zen coding and emmet:
 * Zen coding
-		ul>li*3
-		.container>.header+.footer+.sectionextra
-		ul>li*3>a
-		ul>li*3>a[href=#]{somelink}
+
+			ul>li*3
+			.container>.header+.footer+.sectionextra
+			ul>li*3>a
+			ul>li*3>a[href=#]{somelink}
+
 * Emmet instal via github or package control
 
 ##prefixer:
