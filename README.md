@@ -143,7 +143,7 @@ Not yet covered
 
 ##All about projects
 * subl . that opens a folder
-* save proect as
+* save project as
 * this will add two new files .sublime-project .sublime-workspace
 * edit paths in this file to change the folder that is displaying
 * cmd + ctr + p to switch projects
