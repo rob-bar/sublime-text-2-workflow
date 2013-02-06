@@ -60,6 +60,7 @@ Sublime xiki!!!
 * automactic syntax detection from folder
 * default snippet container
 * my snippets at git@github.com:rob-bar/sublime_snipkeysets.git
+* examples ? ?? _ __ fass js
 
 		<snippet>
 			<content>
@@ -108,6 +109,8 @@ Instal via package controll
 
 ##Http Requester:
 Quick http requests from sublime text 2 `cmd + alt + r` on selected url text
+Handy for route testing
+`http://local.dev/___PRESENTATIONS___/subl%20_text_2_demo/lines.js`
 
 ##Regular expressions:
 * Incremental search `cmd + i`
@@ -158,6 +161,16 @@ Not yet covered
 ##Split windows & moving files
 	[
 		{
+			"keys": ["super+alt+shift+ctrl+down"],
+			"command": "set_layout",
+			"args":
+			{
+				"cols": [0.0, 0.2, 0.6, 1.0],
+				"rows": [0.0, 1.0],
+				"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+			}
+		},
+		{
 			"keys": ["super+alt+shift+ctrl+left"],
 			"command": "set_layout",
 			"args":
@@ -207,10 +220,20 @@ Not yet covered
 				"cells": [[0, 0, 1, 1]]
 			}
 		},
-		{ "keys": ["super+ctrl+left"], "command": "focus_group", "args": { "group": 0 } },
-		{ "keys": ["super+ctrl+right"], "command": "focus_group", "args": { "group": 1 } },
+		{ "keys": ["alt+&"], "command": "focus_group", "args": { "group": 0 } },
+		{ "keys": ["alt+é"], "command": "focus_group", "args": { "group": 1 } },
+		{ "keys": ["alt+\""], "command": "focus_group", "args": { "group": 2 } },
 		{ "keys": ["super+&"], "command": "move_to_group", "args": { "group": 0 } },
-		{ "keys": ["super+é"], "command": "move_to_group", "args": { "group": 1 } }
+		{ "keys": ["super+é"], "command": "move_to_group", "args": { "group": 1 } },
+		{ "keys": ["super+\""], "command": "move_to_group", "args": { "group": 2 } },
+		{
+			"keys": ["alt+space"],
+			"command": "unexpand_tabs"
+		},
+		{
+			"keys": ["ctrl+alt+space"],
+			"command": "expand_tabs"
+		}
 	]
 
 ##Custom builds very handy
@@ -218,3 +241,6 @@ Not yet covered
 * cmd + B
 * Tools build system
 * Tools new build system
+
+## stackoverflow search
+Search Stack Overflow
